@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Ubuntu:ital,wght@0,500;0,700;1,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+}
+
+/* navbar */
+.navbar{
+  display: flex;
+  justify-content: center;
+  height: 50px;
+  align-items: center;
+  position: sticky;
+  top: 0;
+}
+
+.navbar::before{
+  content: "";
+  position: absolute;
+  background-color: crimson;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+.navbar ul{
+  display: flex;
+  list-style: none;
+}
+.navbar ul li{
+  font-size: 1.1rem;
+}
+.navbar ul li a{
+  padding: 5px 100px;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+.navbar ul li a:hover{
+  border-bottom: 2px solid rgb(0, 0, 0);
+  color: black;
+}
+
+/* Home Section*/ 
+#home{
+  display: flex;
+  flex-direction: column;
+  height: 980px;
+  justify-content: center;
+  align-items:flex-start;
+  background: rgba(0, 0, 0, 0.5);
+  color: rgb(255, 255, 255);  
+  
+}
+#home::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url('Images/Banner.jpg') no-repeat center center/cover;
+  height: 1000px;
+  width: 100%;
+  z-index: -1;
+  opacity: .8;
+}
+.heading{
+  color: rgb(255, 0, 85);
+  font: 3rem;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  text-align: center;
+  transform: scale(1,1);
+  font-size: 80px;
+}
+/* About Me*/
+#about{
+  display: flex;
+  flex-direction: column;
+  background: url(Images/textbg.jpg) no-repeat center center/cover;
+  height: 970px;
+}
+#about h1{
+  margin: 70px;
+}
+.columns{
+  display: grid;
+  grid-template-columns: auto auto;
+  padding-left: 50px;
+}
+.box{
+  height: 600px;
+  width: 600px;
+  background-color: rgb(0, 0, 0);
+  border-radius: 20px;
+  margin: 10px;
+  padding: 20px;
+
+}
+.box h2{
+  color: rgb(238, 255, 0);
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.box p{
+  color: white;
+  font-size: 1.1rem;
+  text-align: center;
+}
+/* GALLERY */
+#gallery{
+  display: flex;
+  flex-direction: column;
+  background: url(Images/textbg2.jpg) no-repeat center center/cover;
+  height: 960px;
+}
+.gallery{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.gallery img{
+  width: 270px;
+  height: 470px;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 20px;
+}
+.gallery img:hover{
+  background-color: rgb(255, 0, 170);
+  cursor: pointer;
+}
+
+.home .max-width{
+  margin: auto 0 auto 40px;
+}
+.home .home-content .text-1{
+  font-size: 27px;
+}
+.home .home-content .text-2{
+  font-size: 75px;
+  font-weight: 600;
+  margin-left: -3px;
+}
+.home .home-content .text-3{
+  font-size: 40px;
+  margin: 5px;
+}
+.home .home-content .text-3 span{
+  color: crimson;
+  font-weight: 500;
+}
+
+.h3 {
+  color: green;
+    font-size: 60px;
+    font-style: oblique;
+}
